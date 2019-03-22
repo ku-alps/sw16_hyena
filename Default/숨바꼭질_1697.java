@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class p1697 {
+public class ¼û¹Ù²ÀÁú_1697 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
