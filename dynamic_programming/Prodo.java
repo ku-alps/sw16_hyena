@@ -1,4 +1,4 @@
-package p181230;
+package dynamic_programming;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

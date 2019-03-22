@@ -1,4 +1,4 @@
-package p181230;
+package Default;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.math.BigInteger;
 
-public class PalindromeNumber {
+public class 팰린드롬_숫자 {
 
 	static BigInteger n;
 	static String output;
