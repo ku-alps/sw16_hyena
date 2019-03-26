@@ -27,7 +27,7 @@ public class ÀÌºÐÅ½»ö {
 	}
 	public static int lower_bound(int[] array,int k, int l,int r) {
 		int m;
-		while(r-l>0) {
+		while(l<r) {
 			m = (l+r)/2;
 			if(array[m]<k) l = m+1;
 			else r = m;
