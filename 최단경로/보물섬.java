@@ -1,4 +1,4 @@
-package Default;
+package 최단경로;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
