@@ -25,7 +25,6 @@ class position{
 	}
 }
 public class 미로탐색 {
-	public static int cnt;
 	public static int n,m;
 	public static int[] dx = {0,1,0,-1};
 	public static int[] dy = {1,0,-1,0};
@@ -51,16 +50,15 @@ public class 미로탐색 {
 		Queue<position> q = new LinkedList<>();
 		position p = new position(0,0);
 		q.add(p);
-		cnt = 0; visit[0][0] = 1;
+		visit[0][0] = 1;
 		while(!q.isEmpty()) { //최단경로는 무조건 bfs돌기 
 			position tmp = q.poll();
 			int cy = tmp.getY(); int cx = tmp.getX();
-			cnt = visit[cy][cx] + 1;
 			for(int i=0;i<4;i++) {
 				if(cy+dy[i]>=0 && cy+dy[i]<n && cx+dx[i]>=0 && cx+dx[i]<m) {
 					if(arr[cy+dy[i]][cx+dx[i]] == 1 && visit[cy+dy[i]][cx+dx[i]] == 0) {
 						position newP = new position(cy+dy[i],cx+dx[i]);
-						visit[cy+dy[i]][cx+dx[i]] = cnt;
+						visit[cy+dy[i]][cx+dx[i]] = visit[cy][cx] + 1;
 						q.add(newP);
 					}
 				}
