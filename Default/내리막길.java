@@ -13,8 +13,10 @@ public class 내리막길 {
 	static int dx[] = {0, 1, 0, -1};
 	static int dy[] = {1, 0, -1, 0};
 	static int dfs(int x, int y) {
-		if(x==n && y==m)
+		System.out.println(y+" "+x);
+		if(x==n && y==m) {
 			return 1;
+		}
 		if(visit[y][x]!=-1) return visit[y][x];
 		visit[y][x] = 0;
 		for(int i=0;i<4;i++) {
@@ -44,6 +46,11 @@ public class 내리막길 {
 		}
 		visit[m-1][n-1] = 1;
 		dfs(0,0);
+		for(int i=0;i<m;i++) {
+			for(int j=0;j<n;j++) {
+				System.out.print(visit[i][j]+" ");
+			}System.out.println();
+		}
 		bw.write(String.valueOf(visit[0][0]));
 		bw.close();
 	} 
