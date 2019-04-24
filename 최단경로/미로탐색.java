@@ -9,22 +9,23 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-class position{
-	int y;
-	int x;
-	public position(int y, int x) {
-		super();
-		this.y = y;
-		this.x = x;
-	}
-	public int getY() {
-		return this.y;
-	}
-	public int getX() {
-		return this.x;
-	}
-}
+
 public class ¹Ì·ÎÅ½»ö {
+	static class position{
+		int y;
+		int x;
+		public position(int y, int x) {
+			super();
+			this.y = y;
+			this.x = x;
+		}
+		public int getY() {
+			return this.y;
+		}
+		public int getX() {
+			return this.x;
+		}
+	}
 	public static int n,m;
 	public static int[] dx = {0,1,0,-1};
 	public static int[] dy = {1,0,-1,0};
