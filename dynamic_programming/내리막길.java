@@ -30,11 +30,6 @@ public class 내리막길 {
 		}
 		visit[n-1][m-1] = 1;
 		dfs(0,0);
-		for(int i=0;i<n;i++) {
-			for(int j=0;j<m;j++) {
-				System.out.print(visit[i][j]+" ");
-			}System.out.println();
-		}
 		System.out.println(visit[0][0]);
 	}
 	public static int dfs(int y, int x) {
