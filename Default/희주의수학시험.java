@@ -26,7 +26,7 @@ public class 희주의수학시험 {
 				}
 				if(cnt >=a)
 					sum += now;
-				System.out.println(now);
+				//System.out.println(now);
 			}
 			now++;
 		}
