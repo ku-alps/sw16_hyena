@@ -55,7 +55,7 @@ public class DragonCurve {
 				if(fin[i][j]==1&&fin[i+1][j]==1&&fin[i][j+1]==1&&fin[i+1][j+1]==1)
 					cnt++;
 			}
-		}
+		} 
 		bw.write(String.valueOf(cnt));
 		bw.close();
 	}

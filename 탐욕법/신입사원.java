@@ -1,4 +1,4 @@
-package Default;
+package Å½¿å¹ý;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
